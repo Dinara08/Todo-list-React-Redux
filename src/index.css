@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 1rem;
+    padding: 0;
+}
+
+.todo-wrap {
+    background: url(./img/todo-bg.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    /*filter: blur(7px);*/
+    /*-webkit-filter: blur(7px);*/
+}
+
+.add-field {
+    width: 100%;
+    max-width: 700px;
+    margin: 7rem auto 0;
+    padding: 0 1rem;
+}
+
+.add-field form {
+    display: flex;
+    flex: 1;
+}
+
+.add-field i {
+    margin: 0 !important;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.note {
+    background-color: #fff;
+    padding: 1rem;
+    font-size: 1em;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 0.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeUp 0.2s linear;
+    -webkit-animation: fadeUp 0.2s linear;
+    -moz-animation: fadeUp 0.2s linear;
+    transition: transform 0.2s linear;
+}
+
+.note button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.note button:focus {
+    outline: none;
+}
+
+.ui.checkbox .box, .ui.checkbox label {
+    font-size: 1.2em;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+h1.header {
+    transition: .2s linear;
+    text-align: center;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.edit-inp {
+    border: 1px solid rgba(34,36,38,.15);
+    padding: 0.2rem 1rem;
+    outline: none;
+    color: rgba(0,0,0,.87);
+    border-radius: .28571429rem;
+}
